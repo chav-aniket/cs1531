@@ -1,0 +1,2 @@
+As a business owner, I want to be able to go through potential receivers
+and filter them based on who is closest to me. 

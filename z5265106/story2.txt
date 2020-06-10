@@ -1,0 +1,3 @@
+As a business owner I want to be able to easily list a large 
+number of items at once with all the details necessary such as 
+description, quantity and images.

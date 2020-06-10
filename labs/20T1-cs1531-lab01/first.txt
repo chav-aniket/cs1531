@@ -1,0 +1,4 @@
+Line to create merge conflict
+One line is added
+Second line is added in gitlab!
+Another line is added in a new branch!

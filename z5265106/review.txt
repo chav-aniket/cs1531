@@ -1,0 +1,24 @@
+lines 13/23 - 
+The `ceil(random()*6)` is used multiple times.
+This is repetitive and may not be as easily understood to a new person reading the code.
+This can be put in a function called `roll` to reduce repetition and improve code readability.
+
+lines 16/25 - 
+The for loop is hardcoded to list out 5 numbers.
+If for any reason the number was changed from 5 it would have to be edited everywhere.
+This can be fixed by using the enumerate function within the for loop to keep track of the index. 
+
+lines 19-26 - 
+Long length of code in for loop.
+This interferes with the readability of the code.
+This can be fixed by putting lines 20-26 inside a function called `reroll` while a for loop can still be used to determine how many rerolls the person gets.
+
+lines 29-33 - 
+This is a long way of creating a frequency dictionary.
+This isn't so much a problem but we can use a simpler and smarter way of doing it while using a tool built for this situation.
+The defaultdict import from collections can instead be used to create the frequency dictionary. This essentially removes the else statement. 
+
+lines 35-47 - 
+`len(counts)` is called too many times.
+Unnecessarily increases function call counts when it could simply access a variable.
+There is no need to call `len(counts)` more than once after the rerolls, the length can be stored in a variable.
